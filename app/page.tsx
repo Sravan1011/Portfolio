@@ -10,17 +10,16 @@ export default function Portfolio() {
       title: "Vibe Radar",
       description: "Multiple LLMs Answers Opinion Based Questions.",
       image: "/Viberradar.png",
-      tags: ["Next.js", "TypeScript", "Shadcn",  "OpenAI", "Gemini ","Mistral AI"],
+      tags: ["Next.js", "TypeScript", "Shadcn", "OpenAI", "Gemini", "Mistral AI"],
       link: "https://github.com/Sravan1011/Vibe-Radar",
     },
     {
       title: "OmniSight",
       description: "AI Pioneered Intelligent Crowd and Safety System",
-      image: "/OmniSight.png",
-      tags: ["Nextjs", "Python", "TypeScript", "YoloV8", "OpenCV", "Flask",],
+      image: "/OmniSight .png",
+      tags: ["Nextjs", "Python", "TypeScript", "YoloV8", "OpenCV", "Flask"],
       link: "https://github.com/Sravan1011/OmniSight",
     },
-    
   ]
 
   return (
@@ -48,13 +47,11 @@ export default function Portfolio() {
               <h3 className="text-3xl font-bold mb-6 text-gray-900">About Me</h3>
               <div className="space-y-4 text-gray-600">
                 <p>
-                Hello 👋,
-I am Sravan Avvaru. I am a 21 year old engineering student working on building SaaS & Gen  AI applications. I am building AI Agents and working on Computer Vision Applications too.
-I like experimenting with side projects through different approaches and learning new technologies or even playing chess.
+                  Hello 👋, I am Sravan Avvaru. I am a 21 year old engineering student working on building SaaS & Gen AI applications. I am building AI Agents and working on Computer Vision Applications too.
+                  I like experimenting with side projects through different approaches and learning new technologies or even playing chess.
                 </p>
                 <p>
-                  When I&apos;m not coding, you can find me exploring new design trends, learning finance
-                 or enjoying a good cup of coffee while sketching new ideas.
+                  {`When I'm not coding, you can find me exploring new design trends, learning finance or enjoying a good cup of coffee while sketching new ideas.`}
                 </p>
               </div>
               <div className="flex items-center gap-4 mt-4">
@@ -119,8 +116,10 @@ I like experimenting with side projects through different approaches and learnin
                 <CardHeader className="flex-1">
                   <div className="flex justify-between items-start">
                     <CardTitle className="text-lg text-gray-900">{project.title}</CardTitle>
-                    <Button variant="ghost" size="sm" className="text-teal-600 hover:text-teal-700 hover:bg-teal-50">
-                      <ExternalLink className="h-4 w-4" />
+                    <Button asChild variant="ghost" size="sm" className="text-teal-600 hover:text-teal-700 hover:bg-teal-50">
+                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
                     </Button>
                   </div>
                   <CardDescription className="text-gray-600">{project.description}</CardDescription>
@@ -180,8 +179,6 @@ I like experimenting with side projects through different approaches and learnin
           </div>
         </div>
       </section>
-
-      
     </div>
   )
 }
