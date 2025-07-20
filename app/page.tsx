@@ -1,9 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Github, Linkedin, Mail, ExternalLink, X } from "lucide-react"
+import { Linkedin, Mail, ExternalLink, X } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
 
 export default function Portfolio() {
   const projects = [
@@ -17,7 +16,7 @@ export default function Portfolio() {
     {
       title: "OmniSight",
       description: "AI Pioneered Intelligent Crowd and Safety System",
-      image: "/OmniSight .png",
+      image: "/OmniSight.png",
       tags: ["Nextjs", "Python", "TypeScript", "YoloV8", "OpenCV", "Flask",],
       link: "https://github.com/Sravan1011/OmniSight",
     },
@@ -54,7 +53,7 @@ I am Sravan Avvaru. I am a 21 year old engineering student working on building S
 I like experimenting with side projects through different approaches and learning new technologies or even playing chess.
                 </p>
                 <p>
-                  When I'm not coding, you can find me exploring new design trends, learning finance
+                  When I&apos;m not coding, you can find me exploring new design trends, learning finance
                  or enjoying a good cup of coffee while sketching new ideas.
                 </p>
               </div>
