@@ -7,7 +7,7 @@ export function Hero() {
         <div className="flex flex-col lg:flex-row items-start gap-12 relative z-10">
           {/* Left side - Text content */}
           <div className="flex-1 space-y-6">
-            <h1 className="text-2xl font-medium text-gray-900">hi, i'm Sravan.</h1>
+            <h1 className="text-2xl font-medium text-gray-900">hi, i&apos;m Sravan.</h1>
   
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>i like building and scaling my ideas.</p>
@@ -43,7 +43,7 @@ export function Hero() {
                 useful.
               </p>
               <p>
-                <span className="text-gray-900 font-medium">currently</span> i'm{" "}
+                <span className="text-gray-900 font-medium">currently</span> i&apos;m{" "}
                 <span className="text-black-600 underline">open to</span>
                 <span className="text-gray-900 font-medium"> new opportunities</span>.
               </p>

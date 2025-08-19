@@ -28,7 +28,7 @@ const workExperience = [
         <h2 className="text-xl font-medium text-gray-900 mb-8">work</h2>
   
         <div className="space-y-8">
-          {workExperience.map((work, index) => (
+          {workExperience.map((work) => (
             <div key={work.company} className="flex items-start gap-4">
               <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
                 <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
