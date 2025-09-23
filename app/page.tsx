@@ -101,7 +101,7 @@ export default function Portfolio() {
       tech: ["Nextjs", "Node.js", "Gemini", "Supabase"],
       github: "https://github.com/Sravan1011/Athena.ai",
       live: "https://athenai.vercel.app/",
-      imagePrompt: "A futuristic AI fact-checking AI Agent "
+      imagePrompt: "A futuristic AI fact-checking AI Agent"
     },
     {
       title: "Pelvix 🤖",
@@ -296,10 +296,12 @@ export default function Portfolio() {
               <div className="w-80 h-80 mx-auto relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full opacity-20 animate-pulse"></div>
                 <div className="absolute inset-4 bg-card rounded-full border-4 border-border/50 overflow-hidden">
-                  <img 
+                  <Image
                     src="/profile-avatar.jpg" 
                     alt="Sravan Avvaru" 
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    priority
                   />
                 </div>
               </div>
@@ -316,7 +318,7 @@ export default function Portfolio() {
               </div>
               <div className="lg:col-span-2 space-y-6">
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  I'm Sravan, a passionate full-stack developer and machine learning enthusiast who thrives on transforming ideas into impactful digital solutions. With expertise spanning both frontend and backend development, I specialize in building robust, scalable applications that deliver exceptional user experiences.
+                  I&apos;m Sravan, a passionate full-stack developer and machine learning enthusiast who thrives on transforming ideas into impactful digital solutions. With expertise spanning both frontend and backend development, I specialize in building robust, scalable applications that deliver exceptional user experiences.
                 </p>
                 <p className="text-lg leading-relaxed text-muted-foreground">
                   My technical toolkit includes <span className="text-foreground font-medium">React, Next.js, and TypeScript</span> for crafting responsive interfaces, while I leverage <span className="text-foreground font-medium">Node.js, Express, and various databases</span> to build powerful backends. In the AI/ML space, I work with <span className="text-foreground font-medium">TensorFlow, PyTorch, and LangChain</span> to create intelligent applications that solve complex problems.
@@ -325,7 +327,7 @@ export default function Portfolio() {
                   My journey in tech has been diverse - from contributing to innovative startups to freelancing for global clients, I've honed my skills in delivering high-quality solutions under various constraints. As a <span className="text-foreground font-medium">Technical Intern at Honeywell</span>, I gained hands-on experience with industrial automation and control systems, working on projects that required both technical precision and creative problem-solving.
                 </p>
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  Beyond development, I'm deeply passionate about <span className="text-foreground font-medium">machine learning research</span>, constantly exploring new techniques and contributing to open-source projects. I believe in building tools that not only function flawlessly but also make a tangible difference in people's lives.
+                  Beyond development, I&apos;m deeply passionate about <span className="text-foreground font-medium">machine learning research</span>, constantly exploring new techniques and contributing to open-source projects. I believe in building tools that not only function flawlessly but also make a tangible difference in people&apos;s lives.
                 </p>
                 <p className="text-lg leading-relaxed text-muted-foreground">
                   Currently, I'm seeking new opportunities where I can apply my diverse skill set to challenging problems. Whether it's developing cutting-edge web applications or pushing the boundaries of what's possible with AI, I'm always excited to collaborate on meaningful projects.
@@ -511,7 +513,7 @@ export default function Portfolio() {
                         Open Source Contributions
                       </h3>
                       <p className="text-muted-foreground">
-                        I'm actively contributing to open source projects and will be sharing my contributions here soon.
+                        I&apos;m actively contributing to open source projects and will be sharing my contributions here soon.
                         Check back later to see my work on various open-source initiatives and community projects.
                       </p>
                       <div className="pt-4 border-t border-border/50">
