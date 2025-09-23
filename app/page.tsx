@@ -324,13 +324,13 @@ export default function Portfolio() {
                   My technical toolkit includes <span className="text-foreground font-medium">React, Next.js, and TypeScript</span> for crafting responsive interfaces, while I leverage <span className="text-foreground font-medium">Node.js, Express, and various databases</span> to build powerful backends. In the AI/ML space, I work with <span className="text-foreground font-medium">TensorFlow, PyTorch, and LangChain</span> to create intelligent applications that solve complex problems.
                 </p>
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  My journey in tech has been diverse - from contributing to innovative startups to freelancing for global clients, I've honed my skills in delivering high-quality solutions under various constraints. As a <span className="text-foreground font-medium">Technical Intern at Honeywell</span>, I gained hands-on experience with industrial automation and control systems, working on projects that required both technical precision and creative problem-solving.
+                  My journey in tech has been diverse - from contributing to innovative startups to freelancing for global clients, I&apos;ve honed my skills in delivering high-quality solutions under various constraints. As a <span className="text-foreground font-medium">Technical Intern at Honeywell</span>, I gained hands-on experience with industrial automation and control systems, working on projects that required both technical precision and creative problem-solving.
                 </p>
                 <p className="text-lg leading-relaxed text-muted-foreground">
                   Beyond development, I&apos;m deeply passionate about <span className="text-foreground font-medium">machine learning research</span>, constantly exploring new techniques and contributing to open-source projects. I believe in building tools that not only function flawlessly but also make a tangible difference in people&apos;s lives.
                 </p>
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  Currently, I'm seeking new opportunities where I can apply my diverse skill set to challenging problems. Whether it's developing cutting-edge web applications or pushing the boundaries of what's possible with AI, I'm always excited to collaborate on meaningful projects.
+                  Currently, I&apos;m seeking new opportunities where I can apply my diverse skill set to challenging problems. Whether it&apos;s developing cutting-edge web applications or pushing the boundaries of what&apos;s possible with AI, I&apos;m always excited to collaborate on meaningful projects.
                 </p>
               </div>
             </div>
