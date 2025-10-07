@@ -14,9 +14,6 @@ export default function Home() {
           <Link href="/experience" className="text-gray-400 hover:text-white text-sm font-mono transition-colors">
             experience
           </Link>
-          <Link href="/blogs" className="text-gray-400 hover:text-white text-sm font-mono transition-colors">
-            blogs
-          </Link>
         </div>
       </nav>
 
