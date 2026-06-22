@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sravan Avvaru | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/jetbrains-mono@1.0.6/css/jetbrains-mono.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#dde1ff",
+                    "surface-container": "#1f1f27",
+                    "inverse-surface": "#e4e1ed",
+                    "on-background": "#e4e1ed",
+                    "tertiary": "#ffb783",
+                    "on-surface-variant": "#c7c4d7",
+                    "outline-variant": "#464554",
+                    "secondary-container": "#334282",
+                    "on-tertiary-fixed-variant": "#703700",
+                    "inverse-primary": "#494bd6",
+                    "background": "#0A0A0A",
+                    "surface-container-high": "#292932",
+                    "on-tertiary-container": "#452000",
+                    "surface-bright": "#393841",
+                    "on-primary-fixed-variant": "#2f2ebe",
+                    "surface-container-low": "#1b1b23",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary-fixed": "#001354",
+                    "primary-container": "#8083ff",
+                    "surface-tint": "#c0c1ff",
+                    "surface-variant": "#34343d",
+                    "surface-container-highest": "#34343d",
+                    "tertiary-fixed": "#ffdcc5",
+                    "on-tertiary": "#4f2500",
+                    "tertiary-container": "#d97721",
+                    "primary": "#c0c1ff",
+                    "tertiary-fixed-dim": "#ffb783",
+                    "on-secondary": "#1a2b6a",
+                    "on-surface": "#e4e1ed",
+                    "on-error": "#690005",
+                    "surface": "#13131b",
+                    "error": "#ffb4ab",
+                    "outline": "#908fa0",
+                    "on-primary": "#1000a9",
+                    "primary-fixed-dim": "#c0c1ff",
+                    "on-primary-fixed": "#07006c",
+                    "on-secondary-container": "#a2b1f9",
+                    "on-tertiary-fixed": "#301400",
+                    "surface-container-lowest": "#0d0d15",
+                    "error-container": "#93000a",
+                    "secondary-fixed-dim": "#b8c4ff",
+                    "inverse-on-surface": "#303038",
+                    "primary-fixed": "#e1e0ff",
+                    "on-primary-container": "#0d0096",
+                    "on-secondary-fixed-variant": "#334282",
+                    "surface-dim": "#13131b",
+                    "secondary": "#b8c4ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "margin-lg": "64px",
+                    "margin-md": "32px",
+                    "margin-sm": "16px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Geist"],
+                    "code-md": ["JetBrains Mono"],
+                    "body-lg": ["Geist"],
+                    "headline-lg-mobile": ["Geist"],
+                    "headline-lg": ["Geist"],
+                    "display-xl": ["Geist"],
+                    "label-sm": ["Geist"],
+                    "body-md": ["Geist"]
+            },
+            "fontSize": {
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+                    "code-md": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0A0A0A;
+            color: #e4e1ed;
+            overflow-x: hidden;
+            font-family: 'Geist', sans-serif;
+        }
+
+        .glass-card {
+            background: rgba(18, 18, 18, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glow-indigo {
+            box-shadow: 0px 0px 20px rgba(99, 102, 241, 0.15);
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        /* Subtle atmospheric gradient */
+        .ambient-glow {
+            position: fixed;
+            top: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80vw;
+            height: 40vh;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, rgba(10, 10, 10, 0) 70%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .project-card-highlight {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="selection:bg-primary-container selection:text-on-primary-container">
+<div class="ambient-glow"></div>
+<!-- Navigation Shell (TopAppBar) -->
+<header class="fixed top-base left-1/2 -translate-x-1/2 z-50 flex items-center px-6 py-3 gap-gutter rounded-full max-w-fit mx-auto sticky top-base backdrop-blur-xl border border-white/10 shadow-lg shadow-primary/20 bg-surface/70 dark:bg-surface/70">
+<span class="material-symbols-outlined text-primary" data-icon="terminal">terminal</span>
+<h1 class="font-display-lg text-[20px] tracking-tighter text-on-surface dark:text-on-surface">Sravan Avvaru</h1>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all active:scale-95" data-icon="menu">menu</button>
+</header>
+<main class="w-full max-w-container-max mx-auto px-margin-sm md:px-gutter">
+<!-- Hero Section -->
+<section class="min-h-screen flex flex-col justify-center items-center text-center pt-32 pb-margin-lg">
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+<div class="relative px-gutter py-margin-md glass-card rounded-xl flex flex-col items-center">
+<h2 class="font-display-xl text-[42px] leading-tight md:text-display-xl text-on-surface mb-base">
+                        Sravan Avvaru
+                    </h2>
+<p class="font-code-md text-code-md text-primary tracking-widest uppercase mb-margin-md">
+                        Full-stack Developer & ML Enthusiast
+                    </p>
+<div class="flex gap-base">
+<button class="px-margin-md py-3 bg-primary text-on-primary rounded-lg font-body-md font-bold glow-indigo hover:scale-105 active:scale-95 transition-all">
+                            View Projects
+                        </button>
+<button class="px-margin-md py-3 border border-outline-variant/30 text-on-surface rounded-lg font-body-md hover:bg-white/5 transition-all">
+                            Resume
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- About Me Section -->
+<section class="py-margin-lg">
+<div class="max-w-2xl mx-auto space-y-margin-md">
+<div class="flex items-center gap-base">
+<span class="w-12 h-px bg-primary/40"></span>
+<h3 class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em]">About Me</h3>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    I am an engineer driven by the intersection of <span class="text-on-surface font-bold">full-stack architecture</span> and <span class="text-on-surface font-bold">Generative AI</span>. My work focuses on building performant, scalable systems that leverage modern machine learning frameworks to solve complex pattern-matching challenges.
+                </p>
+<p class="font-body-md text-body-md text-outline leading-relaxed">
+                    Whether it's optimizing data pipelines or crafting glassmorphic user interfaces, I prioritize clarity, information density, and technical precision.
+                </p>
+</div>
+</section>
+<!-- Recent Work Section (Bento Inspired) -->
+<section class="py-margin-lg space-y-margin-md">
+<div class="flex items-center justify-between mb-margin-md">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">Recent Work</h3>
+<span class="font-code-md text-code-md text-primary">01 / 04</span>
+</div>
+<div class="grid grid-cols-1 gap-gutter">
+<!-- FuzzyHyper Boxes Project Card -->
+<div class="glass-card project-card-highlight rounded-xl overflow-hidden group">
+<div class="relative h-64 w-full">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="A sophisticated scientific visualization of fuzzy hyper-box clusters. Glowing indigo and cyan translucent cubes represent data points in a multidimensional dark space. The aesthetic is clean, technical, and reminiscent of a high-end machine learning dashboard or an advanced mathematics simulation software." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBZn8u33B5BNLwpJS4uiS5FkS_JZdJvTEW-dluyxwM_v6gkkfwgcfBJsEBjUYL5B1KtLa4es6Aw6OWVBFxZXRI0qPe144lKUi8KiEWXJfMb-CPkbWuRDwGEdgH3c9zd-luBeUyqfJn1PWr2oq3rddWOEAD9v3-pgMv0qMbO6cWUQBwovG_x8Lft7cdYTX4JYMAwj7PPQYGOhXbwoPQqTTUKLsmsev5aA8PbqfBpe3XiI8g_qbUdk4v9gV37JSbZsaN90UbzMjGe0t9C')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] to-transparent opacity-60"></div>
+</div>
+<div class="p-gutter space-y-margin-sm">
+<div class="flex flex-wrap gap-2">
+<span class="font-code-md text-label-sm px-3 py-1 bg-primary/10 text-primary border border-primary/20 rounded-full">PYTHON</span>
+<span class="font-code-md text-label-sm px-3 py-1 bg-primary/10 text-primary border border-primary/20 rounded-full">NUMPY</span>
+<span class="font-code-md text-label-sm px-3 py-1 bg-primary/10 text-primary border border-primary/20 rounded-full">MATPLOTLIB</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">FuzzyHyper Boxes</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            An implementation of Fuzzy Hyper-box theory for pattern recognition and classification. This project explores adaptive neural-fuzzy inference systems (ANFIS) to create granular data boundaries in high-dimensional space, providing better explainability for AI decisions.
+                        </p>
+<div class="pt-margin-sm border-t border-outline-variant/20 flex justify-between items-center">
+<a class="text-primary font-label-sm flex items-center gap-1 hover:translate-x-1 transition-transform" href="#">
+                                VIEW REPOSITORY <span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<span class="material-symbols-outlined text-outline" data-icon="description">description</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Links Section -->
+<section class="py-margin-lg border-t border-outline-variant/20">
+<h3 class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em] mb-margin-md text-center">Connect with me</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-base">
+<a class="flex items-center justify-between p-gutter glass-card rounded-xl hover:bg-white/5 hover:translate-y-[-4px] transition-all duration-300" href="#">
+<div class="flex items-center gap-margin-sm">
+<span class="material-symbols-outlined text-primary" data-icon="terminal">terminal</span>
+<span class="font-body-md text-on-surface">GitHub</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]" data-icon="north_east">north_east</span>
+</a>
+<a class="flex items-center justify-between p-gutter glass-card rounded-xl hover:bg-white/5 hover:translate-y-[-4px] transition-all duration-300" href="#">
+<div class="flex items-center gap-margin-sm">
+<span class="material-symbols-outlined text-primary" data-icon="link">link</span>
+<span class="font-body-md text-on-surface">LinkedIn</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]" data-icon="north_east">north_east</span>
+</a>
+<a class="flex items-center justify-between p-gutter glass-card rounded-xl hover:bg-white/5 hover:translate-y-[-4px] transition-all duration-300" href="#">
+<div class="flex items-center gap-margin-sm">
+<span class="material-symbols-outlined text-primary" data-icon="alternate_email">alternate_email</span>
+<span class="font-body-md text-on-surface">Twitter</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]" data-icon="north_east">north_east</span>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full max-w-container-max mx-auto px-gutter py-margin-md flex flex-col md:flex-row justify-between items-center gap-base border-t border-outline-variant/30 bg-background dark:bg-background">
+<div class="flex items-center gap-base">
+<span class="font-code-md text-code-md uppercase tracking-widest text-primary">Sravan Avvaru</span>
+<span class="h-4 w-px bg-outline-variant"></span>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024. Built for performance.</p>
+</div>
+<div class="flex gap-margin-sm">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all cursor-pointer" data-icon="source_code">source_notes</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all cursor-pointer" data-icon="terminal">terminal</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all cursor-pointer" data-icon="mail">mail</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all cursor-pointer" data-icon="description">description</span>
+</div>
+</footer>
+<!-- Micro-interaction Script -->
+<script>
+        document.addEventListener('mousemove', (e) => {
+            const glow = document.querySelector('.ambient-glow');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            // Subtle parallax for the glow
+            glow.style.transform = `translate(-50%, -50%) translate(${(x - 0.5) * 50}px, ${(y - 0.5) * 50}px)`;
+        });
+
+        // Intersection observer for fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
