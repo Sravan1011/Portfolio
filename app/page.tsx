@@ -6,38 +6,33 @@ import Image from "next/image";
 import { section } from "framer-motion/client";
 export default function Portfolio() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-10 max-w-2xl mx-auto py-12 sm:py-24 px-6">
+    <main className="flex flex-col min-h-[100dvh] space-y-10 max-w-2xl mx-auto pt-48 md:pt-64 pb-12 sm:pb-24 px-6">
 
       {/* Hero Section */}
       <section id="hero">
-        <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="gap-2 flex justify-between">
-            <div className="flex-col flex flex-1 space-y-1.5">
-              <div className="flex">
-                <span className="inline-block text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Hi,👋 I&apos;m Sravan
-                </span>
-              </div>
-              <div className="flex">
-                <span className="inline-block max-w-[600px] md:text-xl text-muted-foreground">
-                  Building AI products and scaling them.
-                </span>
-              </div>
-              <div>
+        <div className="mx-auto w-full max-w-2xl space-y-4">
+          <div className="flex flex-col">
+            <div className="-mt-16 sm:-mt-20 z-20 relative">
+              <span className="relative flex shrink-0 overflow-hidden rounded-full size-28 sm:size-36 border-4 border-background bg-background">
+                <Image src="/profile-avatar.jpg" alt="Sravan Profile Avatar" fill className="object-cover" />
+              </span>
+            </div>
+            <div className="flex flex-col space-y-1.5 mt-4">
+              <span className="inline-block text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                Hi,👋 I&apos;m Sravan
+              </span>
+              <span className="inline-block max-w-[600px] md:text-xl text-muted-foreground">
+                Building AI products and scaling them.
+              </span>
+              <div className="mt-2">
                 <a
-                  className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:underline transition-all mt-2"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:underline transition-all"
                   href="mailto:samikshasy2908@gmail.com"
                 >
                   <Mail className="size-4" />
                   sravan.avvaru@gmail.com
-
                 </a>
               </div>
-            </div>
-            <div>
-              <span className="relative flex shrink-0 overflow-hidden rounded-full size-32 sm:size-36 border flex-shrink-0">
-                <Image src="/profile-avatar.jpg" alt="Sravan Profile Avatar" fill className="object-cover" />
-              </span>
             </div>
           </div>
         </div>
@@ -259,7 +254,7 @@ export default function Portfolio() {
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Check out my latest work</h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of AI/ML projects, from memory systems to workflow automation platforms.
+                  I&apos;ve worked on a variety of Agentic Projects, from Pipeline Extraction and Image generation to workflow automation platforms.
                 </p>
               </div>
             </div>
@@ -267,17 +262,20 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 max-w-[800px] mx-auto">
             {/* Project 1 */}
             <div className="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full">
+              <div className="relative w-full h-40 sm:h-48 border-b">
+                <Image src="/pelvix.png" alt="Pelvix App Screenshot" fill className="object-cover object-top hover:scale-105 transition-transform duration-500" />
+              </div>
               <div className="flex flex-col px-4 pt-4">
                 <div className="space-y-1">
-                  <h3 className="font-semibold tracking-tight mt-1 text-base">ContextMemory</h3>
+                  <h3 className="font-semibold tracking-tight mt-1 text-base">Pelvix</h3>
                   <div className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-                    <p>A memory system for AI apps that builds context graphs from interactions. Extracts facts as connected semantic and episodic memories, enables intelligent retrieval.</p>
+                    <p>Your digital best friend powered by AI. A modern, full-stack chatbot with personality, built with Next.js and integrated with Pollinations AI for both text generation and image creation.</p>
                   </div>
                 </div>
               </div>
               <div className="text-pretty font-sans text-sm text-muted-foreground mt-auto flex flex-col px-4">
                 <div className="mt-2 flex flex-wrap gap-1">
-                  {["Python", "OpenAI", "PostgreSQL", "RAG"].map((tag) => (
+                  {["Next.js", "Pollinations AI", "Full-Stack"].map((tag) => (
                     <div key={tag} className="inline-flex items-center rounded-md border font-semibold bg-secondary text-secondary-foreground hover:bg-secondary/80 px-1 py-0 text-[10px]">
                       {tag}
                     </div>
@@ -286,9 +284,14 @@ export default function Portfolio() {
               </div>
               <div className="flex items-center pt-4 px-4 pb-4">
                 <div className="flex flex-row flex-wrap items-start gap-2">
-                  <a target="_blank" href="#">
+                  <a target="_blank" href="https://pelvix.vercel.app">
                     <div className="items-center rounded-md border font-semibold bg-primary text-primary-foreground shadow hover:bg-primary/80 flex gap-2 px-2 py-1 text-[10px]">
                       <Globe className="size-3" /> Website
+                    </div>
+                  </a>
+                  <a target="_blank" href="https://github.com/Sravan1011/Pelvix">
+                    <div className="items-center rounded-md border font-semibold bg-primary text-primary-foreground shadow hover:bg-primary/80 flex gap-2 px-2 py-1 text-[10px]">
+                      <Github className="size-3" /> Source
                     </div>
                   </a>
                 </div>
@@ -297,17 +300,20 @@ export default function Portfolio() {
 
             {/* Project 2 */}
             <div className="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full">
+              <div className="relative w-full h-40 sm:h-48 border-b">
+                <Image src="/fairwork.png" alt="FairWork App Screenshot" fill className="object-cover object-top hover:scale-105 transition-transform duration-500" />
+              </div>
               <div className="flex flex-col px-4 pt-4">
                 <div className="space-y-1">
-                  <h3 className="font-semibold tracking-tight mt-1 text-base">AIxAI</h3>
+                  <h3 className="font-semibold tracking-tight mt-1 text-base">FairWork</h3>
                   <div className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-                    <p>MCP-powered system that generates Pydantic AI agents using multi-agent LangGraph workflows. Crawls and chunks docs, stores in Supabase.</p>
+                    <p>FairWork is a Next.js 14 + Solidity project for Web3 freelance escrow. The app combines on-chain job funding with off-chain product workflows for submissions, messaging, meetings, AI-assisted dispute analysis, and legal-report generation.</p>
                   </div>
                 </div>
               </div>
               <div className="text-pretty font-sans text-sm text-muted-foreground mt-auto flex flex-col px-4">
                 <div className="mt-2 flex flex-wrap gap-1">
-                  {["Agentic AI", "LangGraph", "Supabase", "MCP"].map((tag) => (
+                  {["Next.js 14", "Solidity", "Web3", "Smart Contracts"].map((tag) => (
                     <div key={tag} className="inline-flex items-center rounded-md border font-semibold bg-secondary text-secondary-foreground hover:bg-secondary/80 px-1 py-0 text-[10px]">
                       {tag}
                     </div>
@@ -316,9 +322,14 @@ export default function Portfolio() {
               </div>
               <div className="flex items-center pt-4 px-4 pb-4">
                 <div className="flex flex-row flex-wrap items-start gap-2">
-                  <a target="_blank" href="#">
+                  <a target="_blank" href="https://fair-work-escrow.onrender.com/">
                     <div className="items-center rounded-md border font-semibold bg-primary text-primary-foreground shadow hover:bg-primary/80 flex gap-2 px-2 py-1 text-[10px]">
-                      <Globe className="size-3" /> Source
+                      <Globe className="size-3" /> Website
+                    </div>
+                  </a>
+                  <a target="_blank" href="https://github.com/Sravan1011/AI_Boomi_fair_work">
+                    <div className="items-center rounded-md border font-semibold bg-primary text-primary-foreground shadow hover:bg-primary/80 flex gap-2 px-2 py-1 text-[10px]">
+                      <Github className="size-3" /> Source
                     </div>
                   </a>
                 </div>
@@ -328,58 +339,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Hackathons Section */}
-      <section id="hackathons">
-        <div className="space-y-12 w-full py-12">
-          <div>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm font-medium">
-                  Hackathons
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">I like building things</h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Solving real-world problems with innovative tech, from IoT systems to blockchain applications.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l border-border">
-              <li className="relative ml-10 py-4">
-                <div className="absolute -left-16 top-2 flex items-center justify-center bg-background rounded-full">
-                  <span className="relative flex shrink-0 overflow-hidden rounded-full border size-12 m-auto">
-                    <span className="flex h-full w-full items-center justify-center rounded-full bg-muted font-bold">S</span>
-                  </span>
-                </div>
-                <div className="flex flex-1 flex-col justify-start gap-1">
-                  <time className="text-xs text-muted-foreground">August 25th - 26th, 2022</time>
-                  <h2 className="font-semibold leading-none">Smart India Hackathon (SIH)</h2>
-                  <p className="text-sm text-muted-foreground">India</p>
-                  <span className="prose dark:prose-invert text-sm text-muted-foreground mt-2 block">
-                    Represented 6-member team in designing IoT-based Sewage Problem Alert system, securing top finalist position among 30,000+ participating teams.
-                  </span>
-                </div>
-              </li>
-              <li className="relative ml-10 py-4">
-                <div className="absolute -left-16 top-2 flex items-center justify-center bg-background rounded-full">
-                  <span className="relative flex shrink-0 overflow-hidden rounded-full border size-12 m-auto">
-                    <span className="flex h-full w-full items-center justify-center rounded-full bg-muted font-bold">H</span>
-                  </span>
-                </div>
-                <div className="flex flex-1 flex-col justify-start gap-1">
-                  <time className="text-xs text-muted-foreground">March 3rd - 4th, 2023</time>
-                  <h2 className="font-semibold leading-none">Hack JKLU</h2>
-                  <p className="text-sm text-muted-foreground">India</p>
-                  <span className="prose dark:prose-invert text-sm text-muted-foreground mt-2 block">
-                    Conceptualised and prototyped Blockchain-based eVault system with 256-bit encryption, earning 3rd place recognition for innovation.
-                  </span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
 
       {/* Education Section */}
       <section id="education">
@@ -387,25 +346,26 @@ export default function Portfolio() {
           <div>
             <h2 className="text-xl font-bold mb-4">Education</h2>
           </div>
-          <a className="block cursor-pointer" href="#">
+          <a className="block cursor-pointer" href="https://vit.ac.in/" target="_blank">
             <div className="rounded-lg bg-card text-card-foreground flex">
               <div className="flex-none">
-                <span className="relative flex shrink-0 overflow-hidden rounded-full border size-12 m-auto bg-muted">
-                  <span className="flex h-full w-full items-center justify-center rounded-full bg-muted font-bold">U</span>
+                <span className="relative flex shrink-0 overflow-hidden rounded-full border size-12 m-auto bg-white">
+                  <Image src="/vit.png" alt="VIT Logo" fill className="object-contain p-1" />
                 </span>
               </div>
               <div className="flex-grow ml-4 items-center flex-col group">
                 <div className="flex flex-col">
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
-                      University Name
+                      Vishwakarma Institute of Technology (VIT), Pune
                       <span className="inline-flex gap-x-1"></span>
                     </h3>
                     <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
-                      2020 - 2024
+                      2022 - 2026
                     </div>
                   </div>
-                  <div className="font-sans text-xs">Bachelor of Technology in Computer Science</div>
+                  <div className="font-sans text-xs">CGPA: 8.2</div>
+                  <div className="font-sans text-xs">Bachelor of Technology in Electronics and Telecommunication Engineering</div>
                 </div>
               </div>
             </div>

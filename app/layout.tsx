@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   description: "Full-Stack Developer",
 };
 
+
+
+import CoverBanner from "../components/CoverBanner";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-transparent`}
       >
+        <CoverBanner />
         <div className="relative z-10 min-h-screen">
           {children}
         </div>
