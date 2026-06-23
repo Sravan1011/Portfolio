@@ -3,6 +3,7 @@
 import React from "react";
 import { ChevronRight, Globe, Mail, Github, GitMerge, GitPullRequest } from "lucide-react";
 import Image from "next/image";
+import { section } from "framer-motion/client";
 export default function Portfolio() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10 max-w-2xl mx-auto py-12 sm:py-24 px-6">
