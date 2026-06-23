@@ -36,9 +36,7 @@ export default function Portfolio() {
             </div>
             <div>
               <span className="relative flex shrink-0 overflow-hidden rounded-full size-32 sm:size-36 border flex-shrink-0">
-                <span className="flex h-full w-full items-center justify-center rounded-full bg-muted text-4xl font-bold">
-                  SS
-                </span>
+                <Image src="/profile-avatar.jpg" alt="Sravan Profile Avatar" fill className="object-cover" />
               </span>
             </div>
           </div>
