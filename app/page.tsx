@@ -2,7 +2,6 @@
 
 import React from "react";
 import { ChevronRight, Globe, Mail, Github, GitMerge, GitPullRequest } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
 export default function Portfolio() {
   return (
