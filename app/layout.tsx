@@ -31,6 +31,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-transparent`}
       >
+        {/* Animated background orbs */}
+        <div className="bg-orb bg-orb-1" aria-hidden="true" />
+        <div className="bg-orb bg-orb-2" aria-hidden="true" />
+        <div className="bg-orb bg-orb-3" aria-hidden="true" />
+
         <CoverBanner />
         <div className="relative z-10 min-h-screen">
           {children}

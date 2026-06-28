@@ -1,9 +1,11 @@
 "use client";
 
 import React from "react";
-import { ChevronRight, Globe, Mail, Github, GitMerge, GitPullRequest } from "lucide-react";
+import { ChevronRight, Globe, Mail, Github, GitMerge, GitPullRequest, Linkedin, Twitter } from "lucide-react";
 import Image from "next/image";
 import { section } from "framer-motion/client";
+import GitHubContributions from "../components/GitHubContributions";
+import GitHubPRFeed from "../components/GitHubPRFeed";
 export default function Portfolio() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10 max-w-2xl mx-auto pt-48 md:pt-64 pb-12 sm:pb-24 px-6">
@@ -31,6 +33,35 @@ export default function Portfolio() {
                 >
                   <Mail className="size-4" />
                   sravan.avvaru@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center gap-3 mt-3">
+                <a
+                  href="https://github.com/Sravan1011"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center size-9 rounded-lg border border-border bg-card text-muted-foreground hover:text-foreground hover:bg-accent hover:border-foreground/15 transition-all duration-200 hover:shadow-sm hover:-translate-y-0.5"
+                  aria-label="GitHub"
+                >
+                  <Github className="size-4" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/sravanavvaru/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center size-9 rounded-lg border border-border bg-card text-muted-foreground hover:text-foreground hover:bg-accent hover:border-foreground/15 transition-all duration-200 hover:shadow-sm hover:-translate-y-0.5"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="size-4" />
+                </a>
+                <a
+                  href="https://x.com/Sravan1011"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center size-9 rounded-lg border border-border bg-card text-muted-foreground hover:text-foreground hover:bg-accent hover:border-foreground/15 transition-all duration-200 hover:shadow-sm hover:-translate-y-0.5"
+                  aria-label="X (Twitter)"
+                >
+                  <Twitter className="size-4" />
                 </a>
               </div>
             </div>
@@ -128,94 +159,10 @@ export default function Portfolio() {
             <h2 className="text-xl font-bold mb-4">Open Source Contributions</h2>
           </div>
 
-          <a className="block cursor-pointer mt-4" href="https://github.com/usemoss/moss/pull/175" target="_blank">
-            <div className="rounded-lg bg-card text-card-foreground flex">
-              <div className="flex-none">
-                <span className="relative flex shrink-0 overflow-hidden rounded-full border size-12 m-auto bg-muted">
-                  <Image src="/mossdev_logo.jpeg" alt="Moss Logo" fill className="object-cover" />
-                </span>
-              </div>
-              <div className="flex-grow ml-4 items-center flex-col group">
-                <div className="flex flex-col">
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
-                      Moss
-                      <span className="inline-flex gap-x-1"></span>
-                      <ChevronRight className="size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100" />
-                    </h3>
-                  </div>
-                </div>
-                <div className="mt-2 flex flex-col gap-2">
-                  <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground w-fit">
-                    <GitMerge className="size-4 text-purple-500" />
-                    <span className="font-medium text-purple-500">Merged</span>
-                    <span>- Pull Request #175</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground w-fit">
-                    <GitPullRequest className="size-4 text-green-500" />
-                    <span className="font-medium text-green-500">Ongoing</span>
-                    <span>- Pull Request #251</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a className="block cursor-pointer mt-4" href="https://github.com/json-schema-org/website/pull/2397" target="_blank">
-            <div className="rounded-lg bg-card text-card-foreground flex">
-              <div className="flex-none">
-                <span className="relative flex shrink-0 overflow-hidden rounded-full border size-12 m-auto bg-muted">
-                  <Image src="/json_schema.jpeg" alt="JSON Schema Logo" fill className="object-cover p-1" />
-                </span>
-              </div>
-              <div className="flex-grow ml-4 items-center flex-col group">
-                <div className="flex flex-col">
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
-                      JSON Schema
-                      <span className="inline-flex gap-x-1"></span>
-                      <ChevronRight className="size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100" />
-                    </h3>
-                  </div>
-                </div>
-                <div className="mt-2 flex flex-col gap-2">
-                  <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground w-fit">
-                    <GitMerge className="size-4 text-purple-500" />
-                    <span className="font-medium text-purple-500">Merged</span>
-                    <span>- Pull Request #2397</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a className="block cursor-pointer mt-4" href="https://github.com/mermaid-js/mermaid/pull/7814" target="_blank">
-            <div className="rounded-lg bg-card text-card-foreground flex">
-              <div className="flex-none">
-                <span className="relative flex shrink-0 overflow-hidden rounded-full border size-12 m-auto bg-muted">
-                  <Image src="/mermaid_chart_logo.jpeg" alt="Mermaid Logo" fill className="object-cover" />
-                </span>
-              </div>
-              <div className="flex-grow ml-4 items-center flex-col group">
-                <div className="flex flex-col">
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
-                      Mermaid
-                      <span className="inline-flex gap-x-1"></span>
-                      <ChevronRight className="size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100" />
-                    </h3>
-                  </div>
-                </div>
-                <div className="mt-2 flex flex-col gap-2">
-                  <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground w-fit">
-                    <GitPullRequest className="size-4 text-green-500" />
-                    <span className="font-medium text-green-500">Ongoing</span>
-                    <span>- Pull Request #7814</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
+          {/* GitHub Contribution Graph */}
+          <GitHubContributions />
+          {/* Live PR Feed */}
+          <GitHubPRFeed />
         </div>
       </section>
 
